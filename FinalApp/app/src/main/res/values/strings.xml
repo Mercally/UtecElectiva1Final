@@ -1,3 +1,12 @@
 <resources>
+    <!-- #region MainActivity -->
     <string name="app_name">ProyectoFinal</string>
+    <string name="mensaje_bienvenida">Bienvenido al proyecto final de\nJosué Ulises Mercadillo Flores\n\nElectiva I\n29-3436-2015</string>
+    <string name="img_foto_autor">Foto del autor</string>
+    <string name="btn_ir_al_inicio">Ir al inicio</string>
+    <!-- #endregion MainActivity -->
+    <!-- #region InicioActivity -->
+    <string name="mensaje_inicio_sesion">Ingrese sus datos de inicio para continuar</string>
+    <string name="btn_iniciar_sesion">Iniciar sesión</string>
+    <!-- #endregion InicioActivity -->
 </resources>
