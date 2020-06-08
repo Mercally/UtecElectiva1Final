@@ -3,6 +3,7 @@ package com.example.proyectofinal;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ListActivity;
+import android.content.Intent;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -43,8 +44,8 @@ public class DepartamentosActivity extends ListActivity {
 
     @Override
     public void onListItemClick(ListView lita, View vista, int posicion, long id){
-
-
-
+        Intent intent = new Intent(this, DetalleDepartamento.class);
+        intent.putExtra("Posicion", posicion + 1);
+        startActivity(intent);
     }
 }

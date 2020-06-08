@@ -14,8 +14,7 @@ public class BaseDeDatos extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("create table departamentos(id integer primary key, departamento text)");
-
+        db.execSQL("create table departamentos(idDepartamento integer primary key, departamento text)");
         db.execSQL("insert into departamentos values(1, 'Ahuachapán')");
         db.execSQL("insert into departamentos values(2, 'Santa Ana')");
         db.execSQL("insert into departamentos values(3, 'Sonsonate')");
@@ -30,6 +29,22 @@ public class BaseDeDatos extends SQLiteOpenHelper {
         db.execSQL("insert into departamentos values(12, 'La Paz')");
         db.execSQL("insert into departamentos values(13, 'Cabañas')");
         db.execSQL("insert into departamentos values(14, 'San Vicente')");
+
+        db.execSQL("create table detalleDepartamento(idDepartamento integer primary key, activos integer)");
+        db.execSQL("insert into detalleDepartamento values(1, 163)");
+        db.execSQL("insert into detalleDepartamento values(2, 194)");
+        db.execSQL("insert into detalleDepartamento values(3, 133)");
+        db.execSQL("insert into detalleDepartamento values(4, 40)");
+        db.execSQL("insert into detalleDepartamento values(5, 133)");
+        db.execSQL("insert into detalleDepartamento values(6, 12)");
+        db.execSQL("insert into detalleDepartamento values(7, 31)");
+        db.execSQL("insert into detalleDepartamento values(8, 266)");
+        db.execSQL("insert into detalleDepartamento values(9, 59)");
+        db.execSQL("insert into detalleDepartamento values(10, 113)");
+        db.execSQL("insert into detalleDepartamento values(11, 1530)");
+        db.execSQL("insert into detalleDepartamento values(12, 120)");
+        db.execSQL("insert into detalleDepartamento values(13, 36)");
+        db.execSQL("insert into detalleDepartamento values(14, 67)");
     }
 
     @Override

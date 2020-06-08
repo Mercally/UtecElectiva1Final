@@ -52,15 +52,11 @@ public class InicioActivity extends AppCompatActivity {
             return;
         }
 
-        Intent departamentosActivity = new Intent(this, DepartamentosActivity.class);
-        startActivity(departamentosActivity);
-        /*
         if (usuario.equals("ELE1") && contrasenia.equals("VIRTUAL")){
             Intent departamentosActivity = new Intent(this, DepartamentosActivity.class);
             startActivity(departamentosActivity);
         }else{
             tvError.setText("El usuario o contraseña son incorrectos.");
         }
-        */
     }
 }
